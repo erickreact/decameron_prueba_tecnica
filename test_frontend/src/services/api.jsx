@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "decameronpruebatecnica-production.up.railway.app/api"; // URL del backend Laravel
+const API_URL = "http://localhost:8000/api"; // URL del backend Laravel
 
 export const getHoteles = () => axios.get(`${API_URL}/hoteles`);
 export const createHotel = (hotelData) => axios.post(`${API_URL}/hoteles`, hotelData);
